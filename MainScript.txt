@@ -20,6 +20,6 @@ fa = open("Script2.py", "w+")
 fa.close()
 from crontab import CronTab
    cron = CronTab()
-   job = cron.new(command='python /Desktop/test/Script2.py')
+   job = cron.new(command="python /Desktop/test/Script2.py")
    job.minute.during(0,59).every(10)
    cron.write()
